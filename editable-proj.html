@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyzing U.S. Greenhouse Gas Data: A Climate Change Story">
+    <title>Climate Change Story - Greenhouse Gas Analysis</title>
+    
+    <!-- Link to Google Fonts for a modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
+</head>
+
+<body>
+
+    <!-- Loading Screen with Globe Animation -->
+    <div class="globe-container">
+        <div class="earth"></div>
+    </div>
+
+    <header style="display:none;">
+        <h1>Analyzing U.S. Greenhouse Gas Data: A Climate Change Story</h1>
+    </header>
+
+    <nav style="display:none;">
+        <a href="#home">Home</a>
+        <a href="#data-analysis">Data Analysis</a>
+        <a href="#visualizations">Visualizations</a>
+        <a href="#conclusion">Conclusion</a>
+        <a href="#references">References</a>
+    </nav>
+
+    <section id="home" style="display:none;">
+        <h2>Welcome to the Climate Change Project</h2>
+        <p>This project aims to analyze U.S. Greenhouse Gas data and tell the compelling story of how these emissions contribute to climate change.</p>
+    </section>
+
+    <section id="data-analysis" style="display:none;">
+        <h2>Data Analysis</h2>
+        <p>[Add your analysis of the data here]</p>
+    </section>
+
+    <section id="visualizations" style="display:none;">
+        <h2>Visualizations</h2>
+        <p>[Add your data visualizations here]</p>
+    </section>
+
+    <section id="conclusion" style="display:none;">
+        <h2>Conclusion</h2>
+        <p>[Add your conclusions about climate change and greenhouse gases here]</p>
+    </section>
+
+    <section id="references" style="display:none;">
+        <h2>References</h2>
+        <p>[Add your references here]</p>
+    </section>
+
+    <footer style="display:none;">
+        <p>Climate Change Story Project &copy; 2024</p>
+    </footer>
+
+    <script>
+        // This simulates loading time; after 3 seconds, the globe disappears, and the main content shows.
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.globe-container').style.display = 'none';
+                document.querySelector('header').style.display = 'block';
+                document.querySelector('nav').style.display = 'flex';
+                document.querySelector('#home').style.display = 'block';
+                document.querySelector('footer').style.display = 'block';
+            }, 3000); // 3 seconds loading time
+        });
+    </script>
+
+    <style>
+        /* General styling for body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            padding: 0;
+            margin: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #006994, #0099cc); /* Smooth gradient */
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #006994;
+            border-radius: 5px;
+            transform: scale(1.05); /* Smooth scaling effect */
+        }
+
+        /* Section styling */
+        section {
+            padding: 40px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #006994;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        /* Specific section styling for visual consistency */
+        #home {
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+        }
+
+        #data-analysis, #visualizations, #conclusion, #references {
+            background-color: #fafafa;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Globe animation adjustments */
+        .globe-container {
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .earth {
+            width: 100px;
+            height: 100px;
+            background: url('globe.png') no-repeat center center / contain;
+            animation: spin 4s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            section {
+                width: 90%;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</body>
+
+</html>

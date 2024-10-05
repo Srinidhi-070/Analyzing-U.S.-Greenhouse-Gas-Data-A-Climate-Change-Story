@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyzing U.S. Greenhouse Gas Data: A Climate Change Story">
+    <title>Climate Change Story - Greenhouse Gas Analysis</title>
+
+    <!-- Link to Google Fonts for a modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS -->
+</head>
+
+<body>
+
+    <!-- Loading Screen with Globe Animation -->
+    <div class="globe-container">
+        <div class="earth"></div>
+    </div>
+
+    <header style="display:none;">
+        <h1>Analyzing U.S. Greenhouse Gas Data: A Climate Change Story</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#data-analysis">Data Analysis</a>
+        <a href="map.html">Interactive Map</a> <!-- Link to the map page -->
+        <a href="#references">References</a>
+    </nav>
+
+    <section id="home" style="display:none;">
+        <h2>Atmospheric Carbon Dioxide Concentrations and Climate Change</h2>
+        <p>
+            This project focuses on analyzing atmospheric carbon dioxide (CO₂) data to illustrate the long-term trends and how they correlate with the increasing severity of global warming. By presenting the data in a narrative format, we aim to communicate the urgency of addressing climate change.
+        </p>
+        
+        <h2>Understanding Atmospheric CO₂ Levels and Climate Change</h2>
+    
+    <h3>Why CO₂ Matters</h3>
+    <div class="square">
+        <div class="text">
+            <p>Carbon dioxide is Earth’s most important greenhouse gas: a gas that absorbs and radiates heat. Unlike oxygen or nitrogen (which make up most of our atmosphere), greenhouse gases absorb heat radiating from the Earth’s surface and re-release it in all directions—including back toward Earth’s surface. Without carbon dioxide, Earth’s natural greenhouse effect would be too weak to keep the average global surface temperature above freezing. By adding more carbon dioxide to the atmosphere, people are supercharging the natural greenhouse effect, causing global temperature to rise. According to observations by the NOAA Global Monitoring Lab, in 2021 carbon dioxide alone was responsible for about two-thirds of the total heating influence of all human-produced greenhouse gases.
+
+                Another reason carbon dioxide is important in the Earth system is that it dissolves into the ocean like the fizz in a can of soda. It reacts with water molecules, producing carbonic acid and lowering the ocean's pH (raising its acidity). Since the start of the Industrial Revolution, the pH of the ocean's surface waters has dropped from 8.21 to 8.10. This drop in pH is called ocean acidification.</p>
+        </div>
+        <div class="image">
+            <img src="C:\Users\nssri\OneDrive\Desktop\main\pteropod_comparison_620.jpg" alt="(left) A healthy ocean snail has a transparent shell with smoothly contoured ridges. (right) A shell exposed to more acidic, corrosive waters is cloudy, ragged, and pockmarked with ‘kinks’ and weak spots. Photos courtesy Nina Bednarsek, NOAA PMEL. " />
+        </div>
+    </div>
+        
+        <h3>NOAA's Role in Climate Monitoring</h3>
+        <p>
+            The National Oceanic and Atmospheric Administration (NOAA) plays a critical role in monitoring greenhouse gases. Their Global Greenhouse Gas Reference Network (GGGRN) tracks concentrations of CO₂, methane (CH₄), nitrous oxide (N₂O), and other trace gases. By collecting data from surface-level sites and high-altitude measurements, NOAA helps build a comprehensive understanding of the distribution and trends of greenhouse gases worldwide. 
+            <a href="https://earth.gov/ghgcenter/data-catalog/noaa-gggrn-co2-concentrations" target="_blank">More about NOAA</a>.
+        </p>
+        
+        <h3>How Rising CO₂ Levels Affect Our Planet</h3>
+        <p>
+            Rising CO₂ levels are linked to more frequent and severe climate events, including:
+            <ul>
+                <li><strong>Global Temperature Rise:</strong> Increased CO₂ traps more heat in the Earth's atmosphere, leading to rising global temperatures.</li>
+                <li><strong>Ocean Acidification:</strong> About 30% of emitted CO₂ is absorbed by oceans, leading to acidification that harms marine life.</li>
+                <li><strong>Melting Ice Caps:</strong> Higher global temperatures contribute to the melting of glaciers and polar ice caps, which causes rising sea levels and threatens coastal regions.</li>
+                <li><strong>Extreme Weather Events:</strong> The increase in temperature also intensifies the frequency and severity of extreme weather events such as heatwaves, droughts, floods, and hurricanes.</li>
+            </ul>
+        </p>
+        
+        <h3>Key Points</h3>
+        <ul>
+            <li>CO₂ is the primary driver of global warming, and its levels have risen significantly due to human activity.</li>
+            <li>NOAA's monitoring efforts are crucial in tracking greenhouse gas concentrations globally.</li>
+            <li>Rising CO₂ levels are responsible for several climate-related issues, including temperature rise, ocean acidification, and severe weather events.</li>
+            <li>Action to reduce emissions and combat climate change is essential for the future sustainability of our planet.</li>
+        </ul>
+    
+        <!-- Images Section -->
+        <h3>Visualizing CO₂ and Climate Change</h3>
+        <div class="image-gallery">
+            <img src="C:\Users\nssri\OneDrive\Desktop\main\CO2_emissions_vs_concentrations_1751-2022.png" alt="Graph of CO₂ Concentration Over Time" />
+            <img src="C:\Users\nssri\OneDrive\Desktop\main\Screenshot 2024-10-05 233647.png" alt="Atmospheric carbon dioxide" />
+            <img src="C:\Users\nssri\OneDrive\Desktop\main\ClimateDashboard-atmospheric-carbon-dioxide-image-paleo-20240405-1400px.png" alt="carbon dioxide over 800,000 years" />
+        </div>
+    </section>
+    
+    <style>
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 40%;
+            max-width: 40%; /* Limit the size of images */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+    </style>
+    
+    
+    
+    <section id="data-analysis">
+        <h2>Data Analysis</h2>
+        
+        <p>In this project, we analyze data collected from various sources, including NOAA's Global Monitoring Laboratory and other reputable organizations. Our focus is on understanding the trends and impacts of greenhouse gas emissions, particularly carbon dioxide (CO₂), methane (CH₄), and nitrous oxide (N₂O). The analysis is crucial for identifying patterns, understanding the implications of these gases on climate change, and formulating effective mitigation strategies.</p>
+        
+        <h3>Data Sources</h3>
+        <ul>
+            <li><a href="https://gml.noaa.gov/education/faq_cat-1.html">NOAA Global Monitoring Laboratory</a>: Provides extensive data on greenhouse gas concentrations.</li>
+            <li><a href="https://datahub.io/core/co2-ppm">CO₂ Data Repository</a>: A public repository for historical and recent CO₂ levels.</li>
+            <li><a href="https://ghgdata.epa.gov/ghgp/main.do">EPA Greenhouse Gas Reporting Program</a>: Offers comprehensive data on greenhouse gas emissions in the U.S.</li>
+        </ul>
+
+        <h3>NOAA Carbon Dioxide Measurements</h3>
+    <p>NOAA Carbon Dioxide (CO₂) measurements began in 1967 at the Niwot Ridge high-altitude research station in Colorado (3,523 meters above sea level). Since then, the Cooperative Carbon Cycle Greenhouse Gases (CCGG) network has expanded to measure CO₂ from over 50 locations worldwide. Continuous in-situ measurements at NOAA's Global Monitoring Laboratory (GML) Atmospheric Baseline Observatories commenced in 1973, providing essential data for understanding long-term trends in greenhouse gas concentrations. In the 1990s, additional measurements from tall towers and light aircraft in the USA were initiated to support studies on continental sources and sinks of greenhouse gases. More recently, vertical profile data from the AirCore Sampling System has been utilized since 2012 to monitor greenhouse gases at high altitudes, aiding in the validation of remote sensing measurements. These extensive measurement efforts play a crucial role in our analysis of atmospheric CO₂ and its implications for climate change.</p>
+       
+    <h3>Visualizing the Data</h3>
+    <p>To facilitate better understanding, we will incorporate graphical representations of the CO₂ and CH₄ data, showcasing trends over time. These visualizations will help illustrate the urgency of addressing greenhouse gas emissions.</p>
+
+    <h4>Global Average CO₂ Mixing Ratios</h4>
+    <img src="C:\Users\nssri\OneDrive\Desktop\main\co2_tr_global.png" alt="Global average atmospheric carbon dioxide mixing ratios" style="width:65%;align-items: center; ">
+    <p>Top: Global average atmospheric carbon dioxide mixing ratios (blue line) determined using measurements from the Carbon Cycle cooperative air sampling network. The red line represents the long-term trend. Bottom: Global average growth rate for carbon dioxide.</p>
+
+    <h4>Latitudinal Distribution of CO₂</h4>
+    <img src="C:\Users\nssri\OneDrive\Desktop\main\co2_surface.png" alt="Three-dimensional representation of the latitudinal distribution of atmospheric carbon dioxide" style=" width:65%;align-items: center; ">
+    <p>Three-dimensional representation of the latitudinal distribution of atmospheric carbon dioxide in the marine boundary layer. Data from the Carbon Cycle cooperative air sampling network were used. The surface represents data smoothed in time and latitude.</p>
+
+    <h4>Temporal and Spatial Variations in CO₂</h4>
+    <img src="C:\Users\nssri\OneDrive\Desktop\main\co2_gr_contour.png" alt="Contour plot showing variations in the atmospheric increases of carbon dioxide" style=" width:65%;align-items: center; ">
+    <p>Contour plot showing the temporal and spatial variations in the atmospheric increases of carbon dioxide. The cooler colors (green, blue) represent periods of lower than average growth rates, while the warmer colors (yellow, orange, red) represent periods of higher growth rates. The plot is derived from measurements of samples collected at the Carbon Cycle cooperative air sampling network sites. The variations in the growth rate of this climatically important gas are due to interannual variations in the imbalance between sources and sinks, and also to variations in atmospheric transport.</p>
+        
+        <p>For further details and interactive visualizations, please refer to our <a href="map.html">Interactive Map</a>.</p>
+    </section>
+
+    <section id="references" style="display:none;">
+        <h2>References</h2>
+        <p>[Add your references here]</p>
+    </section>
+
+    <footer style="display:none;">
+        <p>Climate Change Story Project &copy; 2024</p>
+    </footer>
+    
+    
+    <script>
+        // This simulates loading time; after 3 seconds, the globe disappears, and the main content shows.
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.querySelector('.globe-container').style.display = 'none';
+                document.querySelector('header').style.display = 'block';
+                document.querySelector('nav').style.display = 'flex';
+                document.querySelector('#home').style.display = 'block';
+                document.querySelector('footer').style.display = 'block';
+            }, 3000); // 3 seconds loading time
+        });
+        document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Loading simulation code
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.querySelector('.globe-container').style.display = 'none';
+            document.querySelector('header').style.display = 'block';
+            document.querySelector('nav').style.display = 'flex';
+            document.querySelector('#home').style.display = 'block';
+            document.querySelector('footer').style.display = 'block';
+        }, 3000); // 3 seconds loading time
+    });
+    </script>
+
+    <style>
+ 
+
+        .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text {
+    width: 100%; /* Adjust width as needed */
+    padding-right: 10px; /* Space between text and image */
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.image {
+    width: 100%; /* Adjust width as needed */
+}
+
+.image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+        /* General styling for body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f0f8ff;
+            padding: 0;
+            margin: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #006994, #0099cc); /* Smooth gradient */
+            color: white;
+            text-align: center;
+            padding: 65px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 650;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #006994;
+            border-radius: 5px;
+            transform: scale(1.05); /* Smooth scaling effect */
+        }
+
+        /* Section styling */
+        section {
+            padding: 65px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.5s ease;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #006994;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        /* Specific section styling for visual consistency */
+        #home {
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+        }
+
+        #data-analysis, #conclusion, #references {
+            background-color: #fafafa;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 65%;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Globe animation adjustments */
+        .globe-container {
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+        }
+
+        .earth {
+            width: 65%;
+            height: 65%;
+            background: url('globe.png') no-repeat center center / contain;
+            animation: spin 4s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            section {
+                width: 90%;
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</body>
+
+</html>
